@@ -198,6 +198,9 @@
 \else
   \setlength \evensidemargin {39mm}
 \fi
+
+% marginparwidth is set to 2cm to accommodate todonotes
+\setlength {\marginparwidth }{2cm}
 %    \end{macrocode}
 %  \begin{macro}{\ps@headings}
 %  Define a new style so that all the standard styles are available.

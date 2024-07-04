@@ -52,7 +52,7 @@
 %  mres
 %  mphil
 %\documentclass[12pt,phd,draft,a4paper,oneside]{ucl_thesis}
-\documentclass[12pt,phd,a4paper,oneside]{ucl_thesis}
+\documentclass[12pt,mres,a4paper,oneside]{ucl_thesis}
 
 
 % Package configuration:
@@ -94,18 +94,20 @@
 
 % At last, content! Remember filenames are case-sensitive and 
 %  *must not* include spaces.
-\include{Preamble}
-\include{Introduction}
-\include{Chapter2}
-\include{Chapter3}
-\include{Conclusions}
+\include{preamble}
+\include{introduction}
+\include{literature}
+\include{methods}
+\include{results}
+\include{discussion}
+\include{conclusions}
 \include{Appendices} 
 % You could separate these out into different files if you have
 %  particularly large appendices.
 
 % Actually generates your bibliography. The fact that \include is 
 % the last thing before this ensures that it is on a clear page.
-\bibliography{example}
+\bibliography{izzy,izzy_2022_2023,izzy_2013_2021.bib}
 
 % All done. \o/
 \end{document}
