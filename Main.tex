@@ -37,7 +37,6 @@
 %  difference as far as I'm aware.
 \RequirePackage[l2tabu, orthodox]{nag}
 
-
 % ------ Main document class specification ------
 % The draft option here prevents images being inserted,
 %  and adds chunky black bars to boxes that are exceeding 
@@ -68,7 +67,7 @@
 
 % And then some settings in separate files.
 \input{FloatSettings} % For things like figures and tables
-\input{BibSettings}   % For bibliographies
+%\input{BibSettings}   % For bibliographies
 
 % These control how many number sections your subsections will take
 %    e.g. Section 2.3.1.5.6.3
@@ -76,10 +75,13 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
+\addbibresource{izzy.bib}
+\addbibresource{izzy_2013_2021.bib}
+\addbibresource{izzy_2022_2023.bib}
 
 \begin{document}
 
-\nobibliography*
+%\nobibliography*
 % ^-- This is a dumb trick that works with the bibentry package to let
 %  you put bibliography entries whereever you like.
 % I used this to put references to papers a chapter's work was 
@@ -107,7 +109,8 @@
 
 % Actually generates your bibliography. The fact that \include is 
 % the last thing before this ensures that it is on a clear page.
-\bibliography{izzy,izzy_2022_2023,izzy_2013_2021.bib}
+\printbibliography[heading=bibintoc,title={References}]
+%\bibliography{izzy,izzy_2022_2023,izzy_2013_2021.bib}
 
 % All done. \o/
 \end{document}

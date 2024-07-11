@@ -161,6 +161,29 @@
 \DeclareOption{final}{\@draftmodefalse\PassOptionsToClass{final}{book}}
 \PassOptionsToClass{a4paper}{book}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
+
+% Izzy's bib options %%%%%%%%%%%%%%%%%%%%
+\newcommand{\bibsort}{nyt}
+\newcommand{\bibtype}{authoryear}
+\newcommand{\bibauto}{plain}
+\DeclareOption{authoryear}{ %default
+    \renewcommand{\bibsort}{nyt}
+    \renewcommand{\bibtype}{authoryear} %style
+    \renewcommand{\bibauto}{plain}
+}
+\DeclareOption{numericcomp}{ %
+    \renewcommand{\bibsort}{none}
+    \renewcommand{\bibtype}{numeric-comp} %style
+    \renewcommand{\bibauto}{plain}
+}
+\DeclareOption{endnotes}{ %this doesn't work properly - may require the following line somewhere?
+%    \usepackage[superscript,biblabel]{cite}
+    \renewcommand{\bibsort}{none}
+    \renewcommand{\bibtype}{numeric} %style
+    \renewcommand{\bibauto}{superscript}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \ProcessOptions
 \LoadClass{book}
 % This is the package that sets the fonts up as Times New Roman.

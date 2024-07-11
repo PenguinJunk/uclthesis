@@ -117,7 +117,26 @@
 %  allows putting full reference lines inline.
 %  See: 
 %   http://tex.stackexchange.com/questions/2905/how-can-i-list-references-from-bibtex-file-in-line-with-commentary
-\usepackage{bibentry} 
+%\usepackage{bibentry} 
+
+% Izzy's prefered reference package is biblatex
+\usepackage[uniquename=false,
+date=year,
+maxbibnames=2,%9
+maxcitenames=2,
+uniquelist=false,
+backend=biber,
+language=british,
+%style=phys, sorting=none
+%style=geschichtsfrkl
+%style=numeric-comp,sorting=none
+% --- Superscript numbers in citation:
+%style=numeric, sorting=none,autocite=superscript % set document option to endnotes
+%style=authoryear % set document option to authoryear
+natbib=true,%url=false,%eprint=false,
+style=\bibtype, sorting=\bibsort, autocite=\bibauto
+]{biblatex}
+
 
 % The isorot package allows you to put things sideways 
 %  (or indeed, at any angle) on a page.
