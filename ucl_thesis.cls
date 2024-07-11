@@ -162,6 +162,24 @@
 \PassOptionsToClass{a4paper}{book}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 
+% Izzy's margin options %%%%%%%%%%%%%%%%%
+% some defaults for margins
+\newcommand{\topm}{3.5cm} % these should probably all be newdimen s 
+\newcommand{\botm}{3cm}
+\newcommand{\lefm}{3cm}
+\newcommand{\rigm}{3cm}
+\providecommand\mtfntsize{11pt}
+\newdimen\nontxtw
+\setlength{\nontxtw}{15cm} % may need adjusting
+\DeclareOption{scribble}{
+    \renewcommand{\topm}{1cm}
+    \renewcommand{\botm}{1cm}
+    \renewcommand{\lefm}{1cm}
+    \renewcommand{\rigm}{10cm}
+    \def\mtfntsize{12pt}
+    \setlength{\nontxtw}{18.5cm}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Izzy's bib options %%%%%%%%%%%%%%%%%%%%
 \newcommand{\bibsort}{nyt}
 \newcommand{\bibtype}{authoryear}
@@ -210,20 +228,37 @@
 %
 %    \begin{macrocode}
 
-\setlength \hoffset{-25.4mm}
-\setlength \voffset{-25.4mm}
-\setlength \textwidth{140mm}
-\setlength \textheight{232mm} % I think you need some extra vertical space for headers and page numbers
-\setlength \topmargin{20mm}
-\setlength \oddsidemargin {39mm} % Allow a mm for the bleed.
-\if@twoside
-  \setlength \evensidemargin {20mm}
-\else
-  \setlength \evensidemargin {39mm}
-\fi
+% original settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setlength \hoffset{-25.4mm}
+%\setlength \voffset{-25.4mm}
+%\setlength \textwidth{140mm}
+%\setlength \textheight{232mm} % I think you need some extra vertical space for headers and page numbers
+%\setlength \topmargin{20mm}
+%\setlength \oddsidemargin {39mm} % Allow a mm for the bleed.
+%\if@twoside
+%  \setlength \evensidemargin {20mm}
+%\else
+%  \setlength \evensidemargin {39mm}
+%\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Izzy's margin settings %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper,footnotesep=5mm]{geometry} % Required for adjusting page dimensions and margins
+\geometry{
+%	paper=a4paper, % Paper size, change to letterpaper for US letter size
+	top=\topm,
+	bottom=\botm,
+	left=\lefm,
+	right=\rigm,
+	headheight=.5cm, % Header height
+	footskip=1cm, % Space from the bottom margin to the baseline of the footer
+	headsep=1.5cm, % Space from the top margin to the baseline of the header
+	%showframe, % Uncomment to show how the type block is set on the page
+}
 % marginparwidth is set to 2cm to accommodate todonotes
 \setlength {\marginparwidth }{2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %    \end{macrocode}
 %  \begin{macro}{\ps@headings}
 %  Define a new style so that all the standard styles are available.
@@ -272,7 +307,7 @@
 %    \begin{macrocode}
 \setlength \parindent{2em}
 \setlength \parskip  {\z@ \@plus 1\p@}
-\setlength \headsep  {16\p@}
+%\setlength \headsep  {16\p@} % Izzy removed
 \ifcase \@ptsize
     \setlength \footskip{26\p@}
 \or
