@@ -51,7 +51,7 @@
 %  mres
 %  mphil
 %\documentclass[12pt,phd,draft,a4paper,oneside]{ucl_thesis}
-\documentclass[12pt,mres,a4paper,oneside,scribble]{ucl_thesis}
+\documentclass[12pt,mpa,a4paper,oneside]{ucl_thesis}%,scribble
 
 
 % Package configuration:
@@ -80,7 +80,7 @@
 \addbibresource{izzy_2022_2023.bib}
 
 \begin{document}
-
+\improvement{colour and hyperlink urls}
 %\nobibliography*
 % ^-- This is a dumb trick that works with the bibentry package to let
 %  you put bibliography entries whereever you like.
@@ -96,14 +96,14 @@
 
 % At last, content! Remember filenames are case-sensitive and 
 %  *must not* include spaces.
-%\include{preamble}
+\include{preamble}
 \include{introduction}
-%\include{literature}
-%\include{methods}
-%\include{results}
-%\include{discussion}
-%\include{conclusions}
-%\include{Appendices} 
+\include{literature}
+\include{methods}
+\include{results}
+\include{discussion}
+\include{conclusions}
+\include{Appendices} 
 % You could separate these out into different files if you have
 %  particularly large appendices.
 
@@ -111,6 +111,6 @@
 % the last thing before this ensures that it is on a clear page.
 \printbibliography[heading=bibintoc,title={References}]
 %\bibliography{izzy,izzy_2022_2023,izzy_2013_2021.bib}
-
+\listoftodos[Fixes needed]
 % All done. \o/
 \end{document}

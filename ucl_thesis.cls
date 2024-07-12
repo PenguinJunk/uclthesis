@@ -135,6 +135,7 @@
 %    \begin{macrocode}
 \newcommand \@doctor{Doctor of Philosophy}
 \newcommand \@master{Master of Philosophy}
+\newcommand \@mpa{Master of Public Administration}
 \newcommand \@mres{Master of Research}
 \newcommand \@degree@string{\@doctor}
 %    \end{macrocode}
@@ -147,7 +148,9 @@
 %  flag and ensure that the appropriate options are passed onto the superclass.
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}[1997/12/01]
-\ProvidesClass{ucl_thesis}[\filedate\space\fileversion\space UCL MRes/MPhil/PhD Thesis class]
+\ProvidesClass{ucl_thesis}[\filedate\space\fileversion\space UCL MPA/MRes/MPhil/PhD Thesis class]
+\DeclareOption{mpa}{\renewcommand\@degree@string{\@mpa}}
+\DeclareOption{MPA}{\renewcommand\@degree@string{\@mpa}}
 \DeclareOption{mres}{\renewcommand\@degree@string{\@mres}}
 \DeclareOption{MRes}{\renewcommand\@degree@string{\@mres}}
 \DeclareOption{mphil}{\renewcommand\@degree@string{\@master}}
