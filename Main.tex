@@ -80,7 +80,6 @@
 \addbibresource{izzy_2022_2023.bib}
 
 \begin{document}
-\improvement{colour and hyperlink urls}
 %\nobibliography*
 % ^-- This is a dumb trick that works with the bibentry package to let
 %  you put bibliography entries whereever you like.
@@ -103,14 +102,13 @@
 %\include{results}
 %\include{discussion}
 %\include{conclusions}
+\listoftodos[Fixes needed]
+% Actually generates your bibliography. The fact that \include is 
+% the last thing before this ensures that it is on a clear page.
+\printbibliography[heading=bibintoc,title={Bibliography}]
+%\bibliography{izzy,izzy_2022_2023,izzy_2013_2021.bib}
 %\include{Appendices} 
 % You could separate these out into different files if you have
 %  particularly large appendices.
-
-% Actually generates your bibliography. The fact that \include is 
-% the last thing before this ensures that it is on a clear page.
-\printbibliography[heading=bibintoc,title={References}]
-%\bibliography{izzy,izzy_2022_2023,izzy_2013_2021.bib}
-\listoftodos[Fixes needed]
 % All done. \o/
 \end{document}
