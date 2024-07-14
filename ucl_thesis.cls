@@ -280,7 +280,7 @@
                 \fi%
             \fi%
             ##1%
-        }{}%
+        }{##1}%
     }%
     \def \sectionmark##1{%
         \markright {%
@@ -386,6 +386,10 @@
         \twocolumn%
     \fi%
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% the following is commented out because it doesn't do anything in biblatex environments %%%%%%%
+\iffalse 
 \renewenvironment{thebibliography}[1]{%
     \chapter*{%
         \bibname%
@@ -418,6 +422,9 @@
     \def \@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
     \endlist%
 }
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \renewenvironment{theindex}{%
     \if@twocolumn%
         \@restonecolfalse%
@@ -571,7 +578,7 @@
      \reset@font%
      \ifnum \c@secnumdepth >\m@ne%
          \if@mainmatter%
-             \Large \bfseries \@chapapp{} \thechapter%
+             \Large \bfseries \@chapapp{} \thechapter \hfill \@date%
              \par%
              \vskip 20\p@%
          \fi%

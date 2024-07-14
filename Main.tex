@@ -95,17 +95,22 @@
 
 % At last, content! Remember filenames are case-sensitive and 
 %  *must not* include spaces.
-%\include{preamble}
+\include{preamble}
 \include{introduction}
 %\include{literature}
 %\include{methods}
 %\include{results}
 %\include{discussion}
 %\include{conclusions}
-\listoftodos[Fixes needed]
+\listoftodos[To do / notes list]
 % Actually generates your bibliography. The fact that \include is 
 % the last thing before this ensures that it is on a clear page.
-\printbibliography[heading=bibintoc,title={Bibliography}]
+\defbibheading{bibliography}[\bibname]{
+    \chapter*{#1}
+    \markboth{#1}{#1}
+    \addcontentsline{toc}{chapter}{#1}%
+}
+\printbibliography[heading=bibliography,title={References}]
 %\bibliography{izzy,izzy_2022_2023,izzy_2013_2021.bib}
 %\include{Appendices} 
 % You could separate these out into different files if you have
