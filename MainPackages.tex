@@ -100,6 +100,8 @@
 %  rows in tables.
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{D}{>{\hsize=.3\hsize\linewidth=\hsize\RaggedRight\arraybackslash}X} 
 \newcolumntype{I}{>{\hsize=.1\hsize\linewidth=\hsize\RaggedRight\arraybackslash}X} 
 \newcolumntype{Q}{>{\hsize=.5\hsize\linewidth=\hsize\RaggedRight\arraybackslash}X} 
@@ -166,8 +168,13 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
 % The microtype package adds `micro-typographic extensions' which
 % generally makes text more readable and hyphenation less likely.
 \usepackage{microtype}
-
-% To Do notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+% Izzy's commands
+%----------------------------------------------------------------------------------------
+\newcommand{\tquote}[2]{``\emph{#1}''\index{#2}}
+%----------------------------------------------------------------------------------------
+% To Do notes 
+%----------------------------------------------------------------------------------------
 \usepackage{nameref}
 \makeatletter
 \newcommand*{\currentname}{\@currentlabelname}
