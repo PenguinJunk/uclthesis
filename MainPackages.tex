@@ -169,9 +169,27 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
 % generally makes text more readable and hyphenation less likely.
 \usepackage{microtype}
 %----------------------------------------------------------------------------------------
+%	izzys colours
+%----------------------------------------------------------------------------------------
+\definecolor{izpink}{rgb}{1,.9,95}
+\definecolor{izgreen}{rgb}{0,0.5,0}
+\definecolor{orangelinks}{RGB}{210, 60, 4}
+\definecolor{izorange}{RGB}{204, 51, 0}
+\definecolor{headblue}{rgb}{.7,.81,0.9}
+\definecolor{thighlightc}{rgb}{1,1,1}
+\newcommand{\pinkcell}{\cellcolor{izpink}}
+\newcommand{\linkcolor}{izgreen}
+
+%----------------------------------------------------------------------------------------
 % Izzy's commands
 %----------------------------------------------------------------------------------------
-\newcommand{\tquote}[2]{``\emph{#1}''\index{#2}}
+\newcommand{\tquote}[2]{
+    \if #2 == "p01"
+        \definecolor{thighlightc}{rgb}{.9,1,8}
+    \fi
+    \colorbox{thighlightc}{``\emph{#1}''}
+}
+
 %----------------------------------------------------------------------------------------
 % To Do notes 
 %----------------------------------------------------------------------------------------
@@ -188,13 +206,3 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
 \newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}% in: \textbf{\currentname}
 
-%----------------------------------------------------------------------------------------
-%	izzys colours
-%----------------------------------------------------------------------------------------
-\definecolor{izpink}{rgb}{1,.9,95}
-\definecolor{izgreen}{rgb}{0,0.5,0}
-\definecolor{orangelinks}{RGB}{210, 60, 4}
-\definecolor{izorange}{RGB}{204, 51, 0}
-\definecolor{headblue}{rgb}{.7,.81,0.9}
-\newcommand{\pinkcell}{\cellcolor{izpink}}
-\newcommand{\linkcolor}{izgreen}
