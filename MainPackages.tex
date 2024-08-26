@@ -204,7 +204,7 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
 %----------------------------------------------------------------------------------------
 % this one enables highlighting of the quotes from a particular participant (intended for participants to individually review their contribution)
 \newcommand{\hp}{p00}
-\newcommand{\tquote}[2]{%is it worth adding an optional argument for the quote ID?
+\newcommand{\tquote}[3]{%add a third argument for the quote ID
     \ifthenelse{\equal{#2}{\hp}}{%
         \definecolor{thighlightc}{rgb}{.7,1,.6}}{%
         \definecolor{thighlightc}{rgb}{1,1,1}%
