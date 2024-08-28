@@ -101,7 +101,7 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{array}
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1-2\tabcolsep}}
 \newcolumntype{D}{>{\hsize=.3\hsize\linewidth=\hsize\RaggedRight\arraybackslash}X} 
 \newcolumntype{I}{>{\hsize=.1\hsize\linewidth=\hsize\RaggedRight\arraybackslash}X} 
 \newcolumntype{Q}{>{\hsize=.5\hsize\linewidth=\hsize\RaggedRight\arraybackslash}X} 
@@ -211,5 +211,13 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
     }%
     \sethlcolor{thighlightc}%
     \hl{``\emph{#1}''}%
+}
+\newcommand{\tref}[2]{
+    \ifthenelse{\equal{#2}{\hp}}{%
+        \definecolor{thighlightc}{rgb}{.7,1,.6}}{%
+        \definecolor{thighlightc}{rgb}{1,1,1}%
+    }%
+    \sethlcolor{thighlightc}%
+    \hl{#1}%
 }
 
