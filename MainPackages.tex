@@ -221,6 +221,12 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
     \hl{#1}%
 }
 
+% izquote
+\newcommand{\izquote}[2]{
+    \parbox{.8\textwidth}{\raggedright\emph{#1}}\\[5mm]
+    \parbox{.8\textwidth}{\raggedleft #2}
+}
+
 % make ISM factors have unique font
 \newcommand{\ismfont}[1]{\textsc{#1}} %change this if you want to change the font
 \newcommand{\ismiv}{\ismfont{Values, Beliefs and Attitudes}}
