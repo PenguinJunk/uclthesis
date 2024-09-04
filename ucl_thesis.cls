@@ -370,6 +370,7 @@
     \if@restonecol%
         \twocolumn%
     \fi%
+    \addcontentsline{toc}{chapter}{\listfigurename}
 }
 \renewcommand \listoftables{%
     \if@twocolumn%
@@ -385,6 +386,7 @@
     \if@restonecol%
         \twocolumn%
     \fi%
+    \addcontentsline{toc}{chapter}{\listtablename}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
