@@ -322,6 +322,7 @@
 %    \end{macrocode}
 %  Do feathering but don't be too worried about exactness.
 %    \begin{macrocode}
+% IZZY look at these if getting intolerable spacing between paragraphs, these may be culprit:
 \tolerance = \@m
 \emergencystretch = 10\p@
 \vfuzz = 2\p@

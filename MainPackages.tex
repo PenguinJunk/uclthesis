@@ -228,7 +228,9 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
     \parbox{.8\textwidth}{\raggedleft #2}
 }
 
+
 % make ISM factors have unique font
+%\DeclareTextFontCommand{\ismfont}{\textsc}
 \newcommand{\ismfont}[1]{\textsc{#1}} %change this if you want to change the font
 \newcommand{\ismiv}{\ismfont{Values, Beliefs and Attitudes}}
 \newcommand{\ismic}{\ismfont{Costs and Benefits}}
@@ -249,24 +251,63 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
 \newcommand{\ismmo}{\ismfont{Objects}}
 \newcommand{\ismmts}{\ismfont{Times and Schedules}}
 
-% \newcommand{\skivalu}{\ismfont{Values, Beliefs and Attitudes}} 
-% \newcommand{\skiagen}{\ismfont{Agency and Effort}}
-% \newcommand{\skipers}{\ismfont{Perspectives}}
-% \newcommand{\skiopin}{\ismfont{Opinion leaders}}
-% \newcommand{\skinetw}{\ismfont{Networks and Relationships}}
 
-% \newcommand{\skiskil}{\ismfont{Skills and Knowledge}}
-% \newcommand{\skitech}{\ismfont{Techniques}}
-% \newcommand{\skiobje}{\ismfont{Objects}}
-% \newcommand{\skifram}{\ismfont{Frames}}
+\newcommand{\scip}{Science-Policy System}
+\newcommand{\know}{Knowledge System}
+\newcommand{\inte}{Interpersonal System}
+\newcommand{\valu}{Values, Beliefs and Attitudes}
+\newcommand{\agen}{Agency and Effort}
+\newcommand{\pers}{Perspectives}
+\newcommand{\opin}{Opinion leaders}
+\newcommand{\netw}{Networks and Relationships}
+\newcommand{\skil}{Knowledge and Skills}
+\newcommand{\tech}{Techniques}
+\newcommand{\fram}{Frames}
+\newcommand{\obje}{Objects}
+\newcommand{\poli}{Policy Landscape}
+\newcommand{\inst}{Institutions}
+\newcommand{\infr}{Infrastructure}
+\newcommand{\even}{Events and Cycles}
+\newcommand{\role}{Roles and Identities}
+\newcommand{\emot}{Emotions}
 
-% \newcommand{\skiinst}{\ismfont{Institutions}}
-% \newcommand{\skipoli}{\ismfont{Policy Landscape}}
-% \newcommand{\skiinfr}{\ismfont{Infrastructure}}
-% \newcommand{\skieven}{\ismfont{Events and Cycles}}
+\newcommand{\skiscip}{\ismfont{\scip}} %ss
+\newcommand{\skiknow}{\ismfont{\know}} %kk
+\newcommand{\skiinte}{\ismfont{\inte}} %ii
+\newcommand{\skivalu}{\ismfont{\valu}} %iv
+\newcommand{\skiagen}{\ismfont{\agen}} %ia
+\newcommand{\skipers}{\ismfont{\pers}} %ip
+\newcommand{\skiopin}{\ismfont{\opin}} %io
+\newcommand{\skinetw}{\ismfont{\netw}} %in
+\newcommand{\skiskil}{\ismfont{\skil}} %kk
+\newcommand{\skitech}{\ismfont{\tech}} %kt
+\newcommand{\skifram}{\ismfont{\fram}} %kf
+\newcommand{\skiobje}{\ismfont{\obje}} %ko
+\newcommand{\skipoli}{\ismfont{\poli}} %sp
+\newcommand{\skiinst}{\ismfont{\inst}} %si
+\newcommand{\skiinfr}{\ismfont{\infr}} %sif
+\newcommand{\skieven}{\ismfont{\even}} %se
+\newcommand{\skirole}{\ismfont{\role}} % r
+\newcommand{\skiemot}{\ismfont{\emot}} % e
 
-% \newcommand{\skirole}{\ismfont{Roles and Identities}}
-% \newcommand{\skiemot}{\ismfont{Emotions}}
+\newcommand{\titscip}{\scip}
+\newcommand{\titknow}{\know}
+\newcommand{\titinte}{\inte}
+\newcommand{\titvalu}{\valu}
+\newcommand{\titagen}{\agen}
+\newcommand{\titpers}{\pers}
+\newcommand{\titopin}{\opin}
+\newcommand{\titnetw}{\netw}
+\newcommand{\titskil}{\skil}
+\newcommand{\tittech}{\tech}
+\newcommand{\titfram}{\fram}
+\newcommand{\titobje}{\obje}
+\newcommand{\titpoli}{\poli}
+\newcommand{\titinst}{\inst}
+\newcommand{\titinfr}{\infr}
+\newcommand{\titeven}{\even}
+\newcommand{\titrole}{\role}
+\newcommand{\titemot}{\emot}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% GLOSSARY IS IN LinksAndMetadata.tex %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
