@@ -324,7 +324,7 @@
 %    \begin{macrocode}
 % IZZY look at these if getting intolerable spacing between paragraphs, these may be culprit:
 \tolerance = \@m
-\emergencystretch = 10\p@
+\emergencystretch = 10\p@% tried setting to 5 and to 2 but no different \raggedbottom in the preamble fixed it
 \vfuzz = 2\p@
 \hfuzz = 2\p@
 \flushbottom
