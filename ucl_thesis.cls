@@ -579,14 +579,15 @@
     {\parindent \z@%
      \raggedright%
      \reset@font%
-     \ifnum \c@secnumdepth >\m@ne%
-         \if@mainmatter%
-             \Large \bfseries \@chapapp{} \thechapter \hfill \@date%
-             \par%
-             \vskip 20\p@%
-         \fi%
-     \fi%
-     \huge \bfseries #1%
+     % \ifnum \c@secnumdepth >\m@ne% izzy removed these lines
+     %     \if@mainmatter%
+     %         \Large \bfseries \@chapapp{} \thechapter \hfill \@date%
+     %         \par%
+     %         \vskip 20\p@%
+     %     \fi%
+     % \fi%
+     % \huge \bfseries #1%
+     \huge \bfseries \thechapter. #1% izzy inserted this line
      \par%
      \nobreak%
      \vskip 40\p@%

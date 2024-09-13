@@ -1,49 +1,85 @@
 \chapter{Results}\label{ch:results}
+\improvement{sort out the ids for the indicator labels and strategic practices}
 
-\section{The resulting dataset}\label{sec:resdataset}
-In total, 38 scientists invited to interview and, of the 20 who responded, 14 were available and interviewed during the period of this study (July and August 2024). This resulted in 9\textonehalf{} hours of interviews, transcribed into 1442 statements. The majority of statements received one or more indicator label.
+\section{The experiences dataset}\label{sec:resdataset}
+In total, 38 scientists invited to interview and, of the 20 who responded, 7 women and 7 men were available and interviewed during the period of this study (July and August 2024). Participants represented, broadly, biophysical sciences, social scientists or were cross-disciplinary. Their current roles also spanned from being primarily focused on scientific research to being focused on supporting policy with scientific knowledge.  A broad categorisation of participants background science and their current focus (science or policy) is given in Table~\ref{tab:cohort}. The interviews resulted in 9\textonehalf{} hours of interviews, transcribed into 1442 statements. The majority of statements received one or more indicator label.
 
-With these data in \CSV{} format, a brief quantitative analysis was undertaken, using the R language, to determine if any strong quantitative patterns emerged from the data. This including determining the association between different \ISM{} factors and a manually assigned ``role'', and a cluster analysis over the indicator labels to determine if participants grouped into different ``types''. The results from this analysis were inconclusive and further quantitative analysis was not undertaken.
+% \begin{table}
+% \centering
+% \footnotesize
+% \caption{Caption}\label{tab:cohort}
+% \begin{tabular}{L{.18\linewidth}L{.08\linewidth}L{.08\linewidth}}
+% \textbf{current focus} & \textbf{female} & \textbf{male} \\ \hline
+% \multicolumn{3}{c}{\small \textbf{biophysical}}\rule{0pt}{4ex} \\
+% science & 3 & 1 \\ 
+% policy	& 1 & 3 \\[2mm] \hline
+% \multicolumn{3}{c}{\small \textbf{social science}}\rule{0pt}{4ex} \\
+% science	& 1 &	1 \\ 
+% policy	& 2 &	\\[2mm] \hline
+% \multicolumn{3}{c}{\small \textbf{cross-disciplinary}}\rule{0pt}{4ex} \\ 
+% science & & 1 \\ 
+% policy	 & & 1 \\[2mm] \hline
+% \end{tabular}
+% \label{tab:my_label}
+% \end{table}
+
+\begin{table}[!ht]
+\centering
+\footnotesize
+\caption{Summary of this study's cohort, showing the count of female and male participants against their scientific background and current focus}\label{tab:cohort}
+\begin{tabular}{B{.25\linewidth}L{.2\linewidth}L{.15\linewidth}L{.15\linewidth}}
+\textbf{background} & \textbf{current focus} & \textbf{female} & \textbf{male} \\ \hline
+\multirow{2}{*}{biophysical science} &
+science & 3 & 1 \\ 
+& policy	& 1 & 3 \\[2mm] \hline
+\multirow{2}{*}{social science} &
+science	& 1 &	1 \\ 
+& policy	& 2 &	\\[2mm] \hline
+\multirow{2}{*}{cross-disciplinary} & 
+science & & 1 \\ 
+& policy	 & & 1 \\[2mm] \hline
+\end{tabular}
+\label{tab:my_label}
+\end{table}
+
+With the data in \CSV{} format, a brief quantitative analysis was undertaken, using the R language, to determine if any strong quantitative patterns emerged from the data. This including determining the association between different \ISM{} factors and a manually assigned ``role'', and a cluster analysis over the indicator labels to determine if participants grouped into different ``types''. The results from this analysis were inconclusive and further quantitative analysis was not undertaken.
 
 %A total of 155 stories\improvement{are stories relevant? if so explain in Chapter~\ref{ch:methods}} were identified in the interviews, excluding those pertaining to the participants' introductory statements about their field of work. Frequently, a story would contain multiple labels for the same theme. For instance, Story 45 ``frustrations as a scientist compared to those as a concerned citizen'' contained mentions of 3 different roles, as well as a description of a conflict in roles. Section~\ref{sec:resski} discusses the nature of each of the ISM factors as they surface within the interviews.
 
 %\section{Influences and strategic activities}\label{sec:resski}
 
-Having extracted influences on the participants based on the \ISM{} framework, a number of factors were deemed rather ambiguous, whilst other factors had considerable overlaps. Further work resolved many of these conflicts by separating 3 ``systems'' from the narratives: \skiinte, \skiknow{} and \skiscip. The most significant resolution was to combine the \ISM{} \ismsn, \ismst{} and some aspects of \ismsm{} into a new factor, \skipers, within the \skiinte. This new factor represented the \emph{perspective taking} that participants were performing about others, and to some extent the \emph{perspective taking} that participants inferred was taking place about scientists. Having extracted \skipers{} indicators from \ismsm, the original \ISM{} factor comprised of indicators about issue and policy \emph{framings} and so was renamed \skifram, within the \skiknow. Another resolution was to combine \ISM{} \ismic{} and \ismia{} into \skiagen, within \skiinte. Whilst the original two factors were indicating subtly different influences, this was a pragmatic combination because the indicators often coexisted and \ismic{} was not a commonly featuring factor in the interviews. \ISM{} \ismmt{} was really as set of \skitech{} used to generate knowledge and was renamed thus, within \skiknow. Similarly, \ISM{} \ismmr{} were observations about the \skipoli{} and \ismmts{} were observations about \skieven{}, both within \skiscip.
+Having identified indicator labels for the factors in the \ISM{} framework, a number of factors were deemed rather ambiguous, whilst other factors had considerable overlaps. Further work resolved many of these conflicts by separating 3 ``systems'' from the narratives: \skiinte, \skiknow{} and \skiscip. The most significant resolution was to combine the \ISM{} \ismsn, \ismst{} and some aspects of \ismsm{} into a new factor, \skipers, within the \skiinte. This new factor represented the \emph{perspective taking} that participants were performing about others, and to some extent the \emph{perspective taking} that participants inferred was taking place about scientists. 
 
-The following sections detail how these factors manifested within the interviews.
+Having extracted \skipers{} indicators from \ismsm, the original \ISM{} factor comprised of indicators about issue and policy \emph{framings} and so was renamed \skifram, within the \skiknow. Another resolution was to combine \ISM{} \ismic{} and \ismia{} into \skiagen, within \skiinte. Whilst the original two factors were indicating subtly different influences, this was a pragmatic combination because the indicators often coexisted and \ismic{} was not a commonly featuring factor in the interviews. \ISM{} \ismmt{} was really as set of \skitech{} used to generate knowledge and was renamed thus, within \skiknow. Similarly, \ISM{} \ismmr{} were observations about the \skipoli{} and \ismmts{} were observations about \skieven{}, both within \skiscip.
+
+The following sections outline the indicator labels and strategic practices that were identified for each factor. For each, the labels and practices are tabulated with illustrative quotes from the dataset. A measure of the influence of each indicator is provided in broad terms (\emph{enabling}, \emph{inhibiting}, \emph{neutral}, \emph{various}). The indicators and practices are further described within each section. Being a primary framework for theory about engagement with the \SPI, the results for \skirole{} were considered first, as described in Section~\ref{sec:resroles}. The results for the three interconnected systems are then described as follows: \skiinte: Section~\ref{sec:resskiinte}, \skiknow: Section~\ref{sec:resskiknow}, and \skiscip: Section~\ref{sec:resskiscip}. 
 
 \section{Roles and identity}\label{sec:resroles}
-
-The results for the \ISM{} \ismsr{} are presented in this section
-
-A brief exploration of the data to determine if meaningful clusters of scientists emerged. Unsurprisingly, with such a small number of participants...
 
 \begin{table}[!ht]
 \footnotesize
 \caption{The main examples of \ismsr{} that influences CAN science and policy  engagements found in the interviews and example quotes}\label{tab:resrole}
-\begin{tabular}{L{.12\linewidth}L{.3\linewidth}L{.58\linewidth}} \hline
-
-\textbf{id} & \textbf{\ismsr} & \textbf{example quote} \\ \hline \hline
-roles & academic; adviser; advocate; broker; citizen; public servant; representative; researcher; specialist &  \\[5mm]
-\multirow{2}{.12\linewidth}{identities} & authoritative; candid; esteemed; experienced; expert; helpful; humble; impartial; informed; judicious; receptive; relevant; selfish & \\[5mm] 
-& undervalued & \tquote{Even just some ... acknowledgement or recognition that people are part of this}{p03}{64} \\[5mm] \hline
+\begin{tabular}{L{.15\linewidth}L{.35\linewidth}L{.5\linewidth}} \hline
+\textbf{id} & \textbf{indicator label} & \textbf{example quotes} \\ \hline \hline
+roles & academic; adviser; advocate; broker; citizen; public servant; representative; researcher; specialist &  \tquote{if you wear an academic hat you can really speak your mind}{p04}{27} \vfill \tquote{I strongly prefer playing kind of the broker, advisor role}{p09}{109} \\[2mm]\rule{0pt}{4ex}
+\multirow{2}{.12\linewidth}{identities} & authoritative; candid; esteemed; experienced; expert; helpful; humble; impartial; informed; judicious; receptive; relevant; selfish & \tquote{that succeeded because of who I was and my reputation as an academic and an IPCC author}{p06}{85} (esteemed) \vfill \tquote{whereas as a ... civil servant, I was restricted in what I could say}{p04}{28} (judicious) \\[2mm] \rule{0pt}{4ex}
+& undervalued & \tquote{... even just some ... acknowledgement or recognition that people are part of this ...}{p03}{64} \\[5mm] \hline
 \end{tabular}
 \end{table}
 
 
 %Participants referred to theirs, or other scientists', roles or identity in about one fifth of the stories. 
-The nature of the roles were varied. As one participant noted \tquote{scientists are a very diverse bunch}{p09}{60}. Participants saw their roles, and those of other scientists, as a \emph{researcher}, who is sometimes a \emph{specialist}. Some roles are in relation to the scientists' institution, such as \emph{academic}, \emph{representative} and \emph{public servant}, the latter referring to a scientist in a government science setting or in an academic institution with a strong awareness of its public funding (See also Section~\ref{sec:resskivalu} \emph{value for public money} and Section~\ref{sec:resskiinst} \emph{social responsibility of public organisations}). Those working more regularly at the interface with policy, may consider themselves more as an \emph{adviser} and occasionally an \emph{advocate}. Also, a number of participants were conscious of their role as a \emph{citizen}.
+Participants identified a varied set of roles for themselves and other scientists working at the \SPI. As one participant noted \tquote{scientists are a very diverse bunch}{p09}{60}. Participants with a science-focus saw their roles, and those of other scientists, as a \emph{researcher}, who is sometimes a \emph{specialist}. Some roles are in relation to the scientists' institution, such as \emph{academic}, \emph{representative} and \emph{public servant}, the latter referring to a scientist in a government science setting or in an academic institution with a strong awareness of its public funding (See also Section~\ref{sec:resskivalu} \emph{value for public money} and Section~\ref{sec:resskiinst} \emph{social responsibility of public organisations}). Those working more regularly at the interface with policy, considered themselves more as an \emph{adviser}, \emph{broker}, or sometimes an \emph{advocate}. Also, a number of participants were conscious of their role as a \emph{citizen}.
 
 Scientists' identities ranged from those largely within the scientific realm concerning scientific recognition (\emph{esteemed}), ability (\emph{expert}) and duty (\emph{helpful}), to those that emerged at the interface concerning the ability to gain notice (\emph{authoritative}), be trusted (\emph{capable}, \emph{credible}), know the processes of policy (\emph{experienced}, \emph{informed}), align with the perspectives of policy (\emph{receptive}, \emph{relevant}) and balance professional demands (\emph{impartial}, \emph{judicious}). This latter pair of identities somewhat contrasted with an observation that some scientists are, or have the opportunity to be, \emph{candid} about their views of CAN science-policy. Finally, being \emph{humble} and \emph{selfish} were identified as contrasting identities of scientists don't or do who promote themselves. The identities \emph{expert}, \emph{authoritative} and \emph{candid} were more commonly applied to other scientists when providing examples of identities of scientists at the science-policy interface. All identities, except an instance of \emph{candid}, and the instances \emph{humble} and \emph{selfish}, were referred to positively.
 
-Several participants indicated frustration that they, their work, or those they worked with, had not received acknowledgement for their efforts or that their efforts were thwarted by lack of support. This tended to be a frustration an inability to influence a policy or governance process and indicated a desire to have the identity \emph{esteemed} or \emph{authoritative}.
+Several participants indicated frustration that they, their work, or those they worked with, had not received acknowledgement for their efforts or that their efforts were thwarted by lack of support, labelled as \emph{undervalued}. This tended to be a frustration an inability to influence a policy or governance process and indicated a desire to have the identity \emph{esteemed} or \emph{authoritative}.
 
 \begin{table}[!ht]
 \footnotesize
-\caption{The strategic practices related to \ismsr{} found in the interviews and example quotes}\label{tab:resrolesstrat}
+\caption{The strategic practices related to \ismsr{} influences}\label{tab:resrolesstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategic practice} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 srs1 & do deeper, more policy-focused, research & \tquote{but a lot of scientists should actually get on and try and discover what they think is going to be societally important stuff and it'll have policy influence through that}{p13}{} \\[5mm]
 srs2 & identifying preferred role and sticking to it & \tquote{But beyond that, I consciously draw the line [between advice and advocacy]}{p09}{} \\[5mm]
 srs3 & identifying the bounds of advocacy & \tquote{[I advocate] only within already societally-established parameters}{p09}{} \\[5mm]
@@ -53,41 +89,21 @@ srs5 & collaborating with people in other roles & \tquote{It's a bit toe curling
 %\end{tabularx}
 \end{table}
 
-\paragraph{Strategies:}
-The strategic practices suggested in relation to role conflicts, were to address concerns that scientists who \emph{advocate} are less credible or that they devalue science or evidence that they convey. The first of these was to focus on fundamental research that would ultimately have policy-relevance (srs1). The related advice given was that research can lead to self-evident policy decisions whilst being entirely neutral. The second strategic practice was to be very clear about which role the scientist prefers and identify the boundaries to that role (srs2). This would be to choose to be either an advisor or an advocate. Another strategic practice is to advocate but within strict boundaries (srs3). For instance, this may be advocating for specific principles or area of knowledge to be included as evidence, a particular issue to be put on the agenda or a new approach to policymaking. Several participants had changed role, stepping away from scientific research, in order to have greater influence (srs4). Finally, working with NGOs who have greater flexibility to advocate (or even campaign) was considered propitious by some participants (srs5), meaning that the scientists could continue research and advise without personal conflict.
-
-\subsection{Emotions}\label{sec:resemotions}
-
-\begin{table}[!ht]
-\footnotesize
-\caption{The main examples of \ismie{} that influences CAN science and policy  engagements found in the interviews and example quotes}\label{tab:resemot}
-\begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{\ismie} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
-ie1 & curiosity; gratitude; pride; satisfaction; determination & enabling & \tquote{it is ultimately rewarding to get involved in some of the really knotty challenges where there's a lot of controversy}{p13}{67} \vfill \tquote{I'm proud of it because it was a beautiful thing that we created and a process that was really interesting
-}{p05}{108} \\[5mm] 
-ie2 & surprise; disappointment; despair; frustration; exhaustion & inhibiting & \tquote{I'm just kind of disappointed that with policy … in the UK, we get there but its very, very complex}{p08}{72} \vfill \tquote{I look around me and I see the promises of 20-30 years just gone}{p11}{84} \\[5mm] \hline
-\end{tabular}
-\end{table}
-
-Various \ismie{} were associated with undertaking science and engaging with policy, often as a response to the experiences. Some of these were positive experiences and often provided motivation to continue with engagements (ie1). Other were experienced as demotivators and inhibitors (ie2).
-
-\paragraph{Strategies:}
-Because \ismie{} tended to be experience in response to experiences related to policy engagements, there were no strategic practices given to directly address the experience of emotions. However, strategic practices (related to other ISM factors) could result in experiences of pride and satisfaction.
-
-
+The strategic practices suggested in relation to \skirole{} were to address concerns that scientists who \emph{advocate} are less credible or that they devalue science or evidence that they convey. The first of these was to focus on fundamental research that would ultimately have policy-relevance (srs1). The related advice given was that research can lead to self-evident policy decisions whilst being entirely neutral. The second strategic practice was to be very clear about which role the scientist prefers and identify the boundaries to that role (srs2). This would be to choose to be either an advisor or an advocate. Another strategic practice is to advocate but within strict boundaries (srs3). For instance, this may be advocating for specific principles or area of knowledge to be included as evidence, a particular issue to be put on the agenda or a new approach to policymaking. Several participants had changed role, stepping away from scientific research, in order to have greater influence (srs4). Finally, working with NGOs who have greater flexibility to advocate (or even campaign) was considered propitious by some participants (srs5), meaning that the scientists could continue research and advise without personal conflict.
 
 \section{\titinte}\label{sec:resskiinte}
 
 \begin{table}[!ht]
 \footnotesize
-\caption{The five factors comprising the \skiinte.}\label{tab:skiinte}
+\caption{The six factors comprising the \skiinte.}\label{tab:skiinte}
 \begin{tabular}{L{.4\linewidth}L{.6\linewidth}} \hline
 \textbf{factor} & \textbf{description} \\ \hline \hline 
-\skivalu & predispositions, brought to the \SPI  \\[5mm]
-\skiagen & personal experiences of my influence at \SPI \\[5mm]
-\skipers & my inference of what others believe and value \\[5mm]
-\skiopin & individuals who have influence \\[5mm]
-\skinetw & interactions between individuals \\[5mm]
+\skivalu & predispositions, brought to the \SPI  \\
+\skiemot & responses to experiences at the \SPI \\
+\skiagen & personal experiences of my influence at \SPI \\
+\skipers & my inference of what others believe and value \\
+\skiopin & individuals who have influence \\
+\skinetw & interactions between individuals \\
 \hline
 \end{tabular}
 \end{table}
@@ -98,7 +114,7 @@ Because \ismie{} tended to be experience in response to experiences related to p
 % Opinion leaders
 % Networks and Relationships
 
-This system describes the ``human'' processes that are essential to science-policy engagement and comprises: \skivalu, \skiagen, \skipers, \skiopin{} and \skinetw{} (Table~\ref{tab:skiinte}). These extend from `within' the individual right through to relationships between individuals (Table~\ref{tab:skiinte}). Narratives from all participants indicated how, particularly the latter factors are important to engagements at the \SPI. However, there are few routines related to these factors, the main focus being on putting \emph{effort} into building relationships.
+This system describes the ``human'' processes that are essential to science-policy engagement and comprises: \skivalu, \skiemot, \skiagen, \skipers, \skiopin{} and \skinetw{} (Table~\ref{tab:skiinte}). These extend from `within' the individual right through to relationships between individuals (Table~\ref{tab:skiinte}). Narratives from all participants indicated how, particularly the latter factors are important to engagements at the \SPI. However, there are few routines related to these factors, the main focus being on putting \emph{effort} into building relationships.
 
 \subsection{\titvalu}\label{sec:resskivalu}
 
@@ -106,10 +122,10 @@ This system describes the ``human'' processes that are essential to science-poli
 \footnotesize
 \caption{Indicators of \skivalu{} influences}\label{tab:resskivalu}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 iv01 & duty to try & enabling & \tquote{it's better to try than not try}{p03}{143} \\[5mm]
-iv02 & moral imperative & enabling & \tquote{it would be morally not possible to not want to do the engagement if you knew the things I found out. So it's a sort of ethically driven activity at some level because the risks are so stark and our [the decision makers'] assessment of them possibly so flawed in practise and policy}{p08}{131} \\[5mm]
-iv03 & social justice & enabling & \tquote{... with very strongly held contested views on both sides of the debate - trying to get into into them and trying to give the voice of scientific rational evidence is difficult - I mean you get shouted at by people - but it's actually rewarding in that often you can help to find a common ground}{p13}{68} \\[5mm]
+iv02 & moral imperative & enabling & \tquote{it would be morally not possible to not want to do the engagement if you knew the things I found out}{p08}{131} \\[5mm]
+iv03 & social justice & enabling & \tquote{... economic theories that might theoretically be the most efficient ones but are also extremely regressive and would be extremely harmful to poor and vulnerable populations}{p09}{77} \\[5mm]
 iv04 & it is important to share what I know & enabling & \tquote{if I'm honest, I really enjoy that, I have a few key messages and I want to try to do something with them}{p05}{102} \\[5mm]
 iv05 & policy should be based on the best science & enabling & \tquote{I believe, quite strongly, that this is one of the best ways that you can actually have long term impact on policy is by doing the the fundamental science that is going to be needed to inform long term policy decisions}{p13}{18} \\[5mm]
 iv06 & science should be useful (in general) & enabling & \tquote{when we're writing papers now, we want to make sure that they're going to be useful to to policy makers}{p02}{64} \\[5mm]
@@ -124,11 +140,26 @@ iv13 & value for public money & neutral & \tquote{this is mostly taxpayers money
 \end{tabular}
 \end{table}
 
-
 Participants stated a range of \skivalu{} that motivated them to undertake policy-relevant science and engage with policy, such as a values relating to duty (\hyperref[tab:resskivalu]{iv01}), moral imperative (\hyperref[tab:resskivalu]{iv02}), and social justice (\hyperref[tab:resskivalu]{iv03}). Engagements with policy were often driven by a belief that it is important to share knowledge (\hyperref[tab:resskivalu]{iv04}) and that policy should be based on the best science (\hyperref[tab:resskivalu]{iv05}). Many participants expressed beliefs about their science such as that it should be useful (\hyperref[tab:resskivalu]{iv06}), relevant (\hyperref[tab:resskivalu]{iv07}), credible (\hyperref[tab:resskivalu]{iv08}), open (\hyperref[tab:resskivalu]{iv09}) and responsible (\hyperref[tab:resskivalu]{iv10}). Finally, participants also acknowledge some attitudes to their work, that they should challenge current policy approaches (\hyperref[tab:resskivalu]{iv11}), be pragmatic (\hyperref[tab:resskivalu]{iv12}) and returning value for public money (\hyperref[tab:resskivalu]{iv13}).
 
-\paragraph{Strategies:}
-Because, in most cases, \skivalu{} had an enabling or neutral influence on engagements, related actions tended to conform values, beliefs or attitudes, and these therefore have not been further tabulated in this section. For instance, \tref{a participant who felt strongly that science should be credible}{p09} used a strategic practice \tquote{not to mislead, willingly or unwillingly}{p09}{74}.
+Because, in most cases, \skivalu{} had an enabling or neutral influence on engagements, related strategic practices tended to conform values, beliefs or attitudes, and these therefore have not been further tabulated in this section. For instance, \tref{a participant who felt strongly that science should be credible}{p09} used a strategic practice \tquote{not to mislead, willingly or unwillingly}{p09}{74}.
+
+\subsection{Emotions}\label{sec:resemotions}
+
+\begin{table}[!ht]
+\footnotesize
+\caption{Indicators of \skiemot{} influences}\label{tab:resemot}
+\begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
+ie1 & curiosity; gratitude; pride; satisfaction; determination & enabling & \tquote{it is ultimately rewarding to get involved in some of the really knotty challenges where there's a lot of controversy}{p13}{67} \vfill \tquote{I'm proud of it because it was a beautiful thing that we created and a process that was really interesting
+}{p05}{108} \\[5mm] 
+ie2 & surprise; disappointment; despair; frustration; exhaustion & inhibiting & \tquote{I'm just kind of disappointed that with policy … in the UK, we get there but its very, very complex}{p08}{72} \vfill \tquote{I look around me and I see the promises of 20-30 years just gone}{p11}{84} \\[5mm] \hline
+\end{tabular}
+\end{table}
+
+Various \ismie{} were associated with undertaking science and engaging with policy, often as a response to the experiences. Some of these were positive experiences and often provided motivation to continue with engagements (ie1). Other were experienced as demotivators and inhibitors (ie2).
+
+Because \ismie{} tended to be experience in response to experiences related to policy engagements, there were no strategic practices given to directly address the experience of emotions. However, strategic practices related to other factors, such as \skipers{} and \skiskil, could result in experiences of pride and satisfaction.
 
 \subsection{\titagen}\label{sec:resskiagen}
 
@@ -136,7 +167,7 @@ Because, in most cases, \skivalu{} had an enabling or neutral influence on engag
 \footnotesize
 \caption{Indicators of \skiagen{} influences}\label{tab:resskiagen}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 ia01 & having capability & enabling & \tquote{we're certainly getting them thinking}{p08}{90} \\[5mm]
 ia02 & happenstance & various & \tquote{really so much of the policy process is about being in the right place at the right time}{p10}{55} \\[5mm]
 ia03 & limits to my influence & inhibiting & \tquote{I don't know whether I can really claim that my specific research has impacted}{p12}{39} \\[5mm]
@@ -151,16 +182,15 @@ Indicators of \skiagen{} expressed participants' perceptions of their ability an
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skiagen{} influences}\label{tab:resskiagenstrat}
+\caption{Strategic practices related to \skiagen{} influences}\label{tab:resskiagenstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 as01 & making it happen & \tquote{making sure that when policy windows or relationships emerge, that you can leverage them or you can use them to influence policy}{p12}{83} \\[5mm]
 as02 & spreading the opportunities for success & \tquote{policy can be super powerful and continue perhaps to put the prime emphasis on those actors, but wouldn't put all my eggs in that basket}{p08}{144} \\[5mm]
 \hline
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
 Given the influence of chance the initiation and outcomes of engagements with policy, a number of participants identified that they tried to be ready for openings for engagement (\hyperref[tab:resskiagenstrat]{as01}), which relates to building knowledge in the policymaking process (Section~\ref{sec:resskiskil}) and anticipating changes in policy (Section~\ref{sec:resskipoli}). Two participants had strategic practices that spread opportunities for success (\hyperref[tab:resskiagenstrat]{as02}), which tended to involve engaging with a range of actors, not just those directly making policy decisions.
 
 \subsection{\titpers}\label{sec:resskipers}
@@ -169,7 +199,7 @@ Given the influence of chance the initiation and outcomes of engagements with po
 \footnotesize
 \caption{Indicators of \skipers{} influences}\label{tab:resskipers}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 ip01 & knowing there are influences other than science & neutral & \tquote{scientists themselves do not take into account that policy makers have millions of different sources for information for their decision making}{p11}{81} \\[5mm]
 ip02 & policy options are limited & inhibiting & \tquote{we cannot regulate in this area, we cannot actually stop people from doing things, that would just be impossible to say to a minister}{p05}{73} \\[5mm]
 ip03 & policy options are limited by preferences of the electorate & inhibiting & \tquote{if the farmers don't want to plant it because it's culturally not right for them or the people don't like the look of it in the countryside and they don't want it, or the policy makers don't believe it because there's all the Panorama and all the negative [media] - biomass is really hot potato politically}{p14}{34} \\[5mm]
@@ -186,9 +216,9 @@ The majority of \skipers{} expressed were perceptions of the wider set of influe
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skipers{} influences}\label{tab:resskipersstrat}
+\caption{Strategic practices related to \skipers{} influences}\label{tab:resskipersstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 ps01 & aligning to the needs of policy & \tquote{[policymakers are] really busy people, they're very smart, generally, but you have to talk to them in their terms and their language}{p14}{80} \\[5mm]
 ps02 & provide options neutrally & \tquote{[being opinionated] doesn't work, definitely not with policymakers ... -  it doesn't resonate with them. The first sentence of the entire argument they already say ``oh, it's wrong, sorry, I don't need to listen anymore''}{p09}{83} \\[5mm]
 ps03 & challenging policymaker perspectives & \tquote{it's shifting the whole economic framework of thinking and with it, practically, it's shifting the policy guidance}{p08}{115} \\[5mm]
@@ -199,8 +229,7 @@ ps06 & learning the policymaker's perspective & \tquote{maybe have a meeting and
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
-Where conflict was perceived between the \skipers{} of policymakers and themselves, participants choose approaches that either aligned to the needs of policy (\hyperref[tab:resskipersstrat]{ps01}) or found ways to challenge these \skipers{} (\hyperref[tab:resskipersstrat]{ps03}). Both required understanding better what are the \skipers{} of policymakers (\hyperref[tab:resskipersstrat]{ps06}). A main way of aligning is by providing policy options neutrally (\hyperref[tab:resskipersstrat]{ps02}) to allow policymakers to balance their decisionmaking. Because policymakers \skipers{} were perceived to be constrained by the \skipers{} of others, participants used a range of means of creating diverse dialogues with policymakers and stakeholders (\hyperref[tab:resskipersstrat]{ps04}) and they also advocated for public engagement in decisionmaking (\hyperref[tab:resskipersstrat]{ps05}).
+Where conflict was perceived between the \skipers{} of policymakers and themselves, participants choose strategic practices that either aligned to the needs of policy (\hyperref[tab:resskipersstrat]{ps01}) or found ways to challenge these \skipers{} (\hyperref[tab:resskipersstrat]{ps03}). Both required understanding better what are the \skipers{} of policymakers (\hyperref[tab:resskipersstrat]{ps06}). A main way of aligning is by providing policy options neutrally (\hyperref[tab:resskipersstrat]{ps02}) to allow policymakers to balance their decisionmaking. Because policymakers \skipers{} were perceived to be constrained by the \skipers{} of others, participants used a range of means of creating diverse dialogues with policymakers and stakeholders (\hyperref[tab:resskipersstrat]{ps04}) and they also advocated for public engagement in decisionmaking (\hyperref[tab:resskipersstrat]{ps05}).
 
 \subsection{\titopin}\label{sec:resskiopin}
 
@@ -208,7 +237,7 @@ Where conflict was perceived between the \skipers{} of policymakers and themselv
 \footnotesize
 \caption{Indicators of \skiopin{} influences}\label{tab:resskiopin}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 io01 & scientists' knowledge drew interest from policymakers & enabling & \tquote{they had already decided they wanted to work with us}{p05}{26} \\[5mm]
 io02 & scientists influencing policymakers & enabling & \tquote{informally I think they [have been] picked up and had a bit of traction}{p03}{37} \\[5mm]
 io03 & scientists influencing others & enabling & \tquote{We've been cited by both industry and NGOs on different sides of the debate, so we've probably got something right there}{p01}{70} \\[5mm]
@@ -224,16 +253,15 @@ All participants mentioned individuals and groups to whom scientists and policym
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skiopin{} influences}\label{tab:resskiopinstrat}
+\caption{Strategic practices related to \skiopin{} influences}\label{tab:resskiopinstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 os01 & opportunities to promote our work & \tquote{if I get media requests, I think if I've got the expertise, I should do that because it goes with the job}{p01}{41} \\[5mm]
 \hline
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
-In some cases, this understanding has been used to gain influence. A number of participants mentioned promoting their work through third parties such as media opportunities but also by engaging with organisations such as industry or NGOs such as charities, campaigning organisations and networks (think tanks) as a mechanism for influencing policymaking (\hyperref[tab:resskiopinstrat]{os01}).
+In some cases, an understanding of the influence of \skiopin{} was been used as in strategic practices to gain influence. A number of participants mentioned promoting their work through third parties such as media opportunities but also by engaging with organisations such as industry or NGOs such as charities, campaigning organisations and networks (think tanks) as a mechanism for influencing policymaking (\hyperref[tab:resskiopinstrat]{os01}).
 
 \subsection{\titnetw}\label{sec:resskinetw}
 
@@ -241,7 +269,7 @@ In some cases, this understanding has been used to gain influence. A number of p
 \footnotesize
 \caption{Indicators of \skinetw{} influences}\label{tab:resskinetw}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 in01 & relationships are more important & enabling & \tquote{having a really big wide network of collaborations is important there I think}{p02}{34} \\[5mm]
 in02 & we learn about what matters through our network & enabling & \tquote{they also gave us a bit more of a connection to some other bits of government thinking on this area}{p13}{34} \\[5mm]
 in03 & connected to policymakers & enabling & \tquote{a lot of policy work is still done on relationships}{p12}{25} \\[5mm]
@@ -257,9 +285,9 @@ in07 & part of a cross-sector network & enabling & \tquote{you've got to work on
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skinetw{} influences}\label{tab:resskinetwstrat}
+\caption{Strategic practices related to \skinetw{} influences}\label{tab:resskinetwstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 ns01 & dedicating time and effort to building connections & \tquote{[the trust] is built up over years, decades}{p10}{61}\\[5mm] 
 ns02 & we collaborate on a topic & \tquote{when you involve them right from the outset and they're even setting the agenda, then there's a good chance that that's actually going to get used in some way}{p05}{35}\\[5mm] 
 ns03 & colocation and embedding & \tquote{I've been very lucky with the secondment - it's been a huge learning curve to understand how policy gets made, but it's been incredibly helpful in terms of networks}{p12}{88}\\[5mm]
@@ -267,20 +295,19 @@ ns03 & colocation and embedding & \tquote{I've been very lucky with the secondme
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
 Despite the stated importance of \skinetw, there were few specific strategic practices mentioned for building networks except to recognise it can take a lot of effort and time (\hyperref[tab:resskinetwstrat]{ns01}). However, two approaches that were mentioned by a number of participants was to collaborate on a specific topic (\hyperref[tab:resskinetwstrat]{ns02}) with actors from policy, academia, industry and NGOs, and to find opportunities to be colocated with policymakers (\hyperref[tab:resskinetwstrat]{ns03}). 
 
 \section{\titknow}\label{sec:resskiknow}
 
 \begin{table}[!ht]
 \footnotesize
-\caption{The five factors comprising the \skiknow.}\label{tab:skiknow}
+\caption{The four factors comprising the \skiknow.}\label{tab:skiknow}
 \begin{tabular}{L{.4\linewidth}L{.6\linewidth}} \hline
 \textbf{factor} & \textbf{description} \\ \hline \hline 
-\skiskil & skills and knowledge needed to engage at the \SPI  \\[5mm]
-\skitech & techniques for generating knowledge \\[5mm]
-\skifram & framings of knowledge \\[5mm]
-\skiobje & manifestations of knowledge \\[5mm]
+\skiskil & skills and knowledge needed to engage at the \SPI  \\
+\skitech & techniques for generating knowledge \\
+\skifram & framings of knowledge \\
+\skiobje & manifestations of knowledge \\
 \hline
 \end{tabular}
 \end{table}
@@ -298,7 +325,7 @@ This system describes the ways that knowledge is created and manipulated to make
 \footnotesize
 \caption{Indicators of \skiskil{} influences}\label{tab:resskiskil}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 kk01 & I know and understand the science & enabling & \tquote{actually we're probably the best people to be speaking to}{p01}{43} \\[5mm]
 kk02 & I know and understand the policymaking process & enabling & \tquote{because we've been speaking to some of the policy people as part of that, we knew this is just setting the policy landscape}{p01}{86} \\[5mm]
 kk03 & the policymaker can gain knowledge easily & enabling & \tquote{there is a receptivity to that argument, particularly amongst the bright people in the civil service - they totally get that}{p08}{107} \\[5mm]
@@ -313,15 +340,14 @@ kk06 & the policymaker needs to gain knowledge in the science & inhibiting & \tq
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skiskil{} influences}\label{tab:resskiskilstrat}
+\caption{Strategic practices related to \skiskil{} influences}\label{tab:resskiskilstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 ks01 & working together to build knowledge & \tquote{we scoped out the research with them - they had a quite a clear idea about what they wanted to achieve}{p05}{27} \\[5mm]
 \hline
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
 Apart from the very direct strategic practice of gaining missing \skiskil, some participants described how they worked together with policymakers to develop the knowledge needed (\hyperref[tab:resskiskilstrat]{ks01}). This is closely related to the strategic practice of coproduction (Section~\ref{sec:resskitech}).
 
 \subsection{\tittech}\label{sec:resskitech}
@@ -330,7 +356,7 @@ Apart from the very direct strategic practice of gaining missing \skiskil, some 
 \footnotesize
 \caption{Indicators of \skitech{} influences}\label{tab:resskitech}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 kt01 & lack of policy-focused research approaches & inhibiting & \tquote{if they ask academics ``what sort of work is there?'' They [policymakers] could get sent 102 hundred papers - how do they make sense of that?}{p01}{67} \\[5mm]
 kt02 & lack of policy development options relevant to CAN issues & inhibiting & \tquote{[The science policy interface] just a very messy fuzzy process}{p03}{123} \\[5mm]
 \hline
@@ -341,9 +367,9 @@ A range of \skitech{} are needed to achieve the goals of science-policy engageme
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skitech{} influences}\label{tab:resskitechstrat}
+\caption{Strategic practices related to \skitech{} influences}\label{tab:resskitechstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 ts01 & systems thinking and modelling & \tquote{I always take a systems approach. So using systems modelling, conceptual systems modelling, participatory modelling and then some simulation modelling as well}{p11}{3} \\[5mm]
 ts02 & coproduction and participatory research & \tquote{once you've got your foot in the door and you can say well, we were clearly working well together, we're helping to address evidence gaps that you have … we've been able to roll out quite a programme of research with them, but that co-design}{p05}{34-35} \\[5mm]
 ts03 & knowledge translation and synthesis & \tquote{you … do the assessment of the knowledge and you take that science and you do the intellectual exercise of how much we believe, what alternatives are there available to look at this problem, how they differ in their answers, or maybe the answers are the same}{p09}{70} \\[5mm]
@@ -354,7 +380,7 @@ ts06 & public participation and deliberation & \tquote{we wanted to push for mor
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:} A number of participants' strategic practices involved utilising or creating engagement \skitech. These included applying more expansive research approaches such as modelling the whole biophysical or social system (\hyperref[tab:resskitechstrat]{ts01}) and coproducing research and insights with policymakers and / stakeholders (\hyperref[tab:resskitechstrat]{ts02}; see also Section~\ref{sec:resskiskil}). Participants used more reproducible ways of translating scientific findings into policy \skifram{} (\hyperref[tab:resskitechstrat]{ts03}; see also Section~\ref{sec:resskifram}) and action (\hyperref[tab:resskitechstrat]{ts04}). Participants also described participatory approaches developing policy with the public (\hyperref[tab:resskitechstrat]{ts05}) and other stakeholders (\hyperref[tab:resskitechstrat]{ts06}).
+A number of participants' strategic practices involved utilising or creating engagement \skitech. These included applying more expansive research approaches such as modelling the whole biophysical or social system (\hyperref[tab:resskitechstrat]{ts01}) and coproducing research and insights with policymakers and / stakeholders (\hyperref[tab:resskitechstrat]{ts02}; see also Section~\ref{sec:resskiskil}). Participants used more reproducible ways of translating scientific findings into policy \skifram{} (\hyperref[tab:resskitechstrat]{ts03}; see also Section~\ref{sec:resskifram}) and action (\hyperref[tab:resskitechstrat]{ts04}). Participants also described participatory approaches developing policy with the public (\hyperref[tab:resskitechstrat]{ts05}) and other stakeholders (\hyperref[tab:resskitechstrat]{ts06}).
 
 \subsection{\titfram}\label{sec:resskifram}
 
@@ -362,7 +388,7 @@ ts06 & public participation and deliberation & \tquote{we wanted to push for mor
 \footnotesize
 \caption{Indicators of \skifram{} influences}\label{tab:resskifram}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 kf01 & CAN is serious & enabling & \tquote{there is a broad consensus in policy and politics, climate change is important, and we should do stuff about it and things are happening, but that's a very long won battle and and it's still just that pretty basic level}{p03}{127} \\[5mm]
 kf02 & CAN is not serious & inhibiting & \tquote{That's not really engaging with what we said, but that's all they have to do, just write a written response. It doesn't really matter if it was a good response or a shitty response}{p05}{107} \\[5mm]
 kf03 & CAN issues are often simplified & various & \tquote{the core economics is telling you `put a uniform carbon price on everything and everything will be fine'}{p08}{112} \\[5mm]
@@ -384,9 +410,9 @@ An area of conflict resulted from specific meaning of CAN solutions as being pri
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skifram{} influences}\label{tab:resskiframstrat}
+\caption{Strategic practices related to \skifram{} influences}\label{tab:resskiframstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 fs01 & answering policy questions & \tquote{they [policymakers] need help with [a problem] and you kind of listen and hear what their problem or issue is and see if see if you've got something you can offer to help}{p08}{14} \\[5mm]
 fs02 & being guided by people who know how to create meaning for policymakers & \tquote{we wrote it down and then we sent it to them and got them to reflect back on it and then change it}{p07}{45} \\[5mm]
 fs03 & learning from what policy does & \tquote{trying to mirror the sorts of things that think tanks do, or like the House of Commons POST Notes that sort of thing - short two to three page summaries that were just snappy}{p03}{35} \\[5mm]
@@ -394,8 +420,6 @@ fs04 & using science thinking to create meaning for policymakers & \tquote{in th
 \hline
  \end{tabular}
 \end{table}
-
-\paragraph{Strategies:}
 
 Given the considerable weight given to \skifram for influencing science-policy engagement, it is not surprising that there were several different strategic practices for framing knowledge. \skitech{} and routines for deriving \skifram{} are referenced in Section~\ref{sec:resskitech}. More general strategies were also used to align \skifram{} to policy. A way of creating very meaningful engagements was to seek out and directly answer policy questions (\hyperref[tab:resskiframstrat]{fs01}). Some participants were able to engage directly with policy officials or civil servants (as reflected in Section~\ref{sec:resskinetw}) (\hyperref[tab:resskiframstrat]{fs02}) such as to obtain direct feedback on how they were presenting their research and findings, while others modelled their activities on what others have done to create meaning from research (\hyperref[tab:resskiframstrat]{fs03}). There were also two participants, one from \tref{biophysical modelling}{p08} and the other a \tref{social scientist}{p05}, who used insights from their own fields to create particular meanings for their policy engagements (\hyperref[tab:resskiframstrat]{fs04}). 
 
@@ -405,7 +429,7 @@ Given the considerable weight given to \skifram for influencing science-policy e
 \footnotesize
 \caption{Indicators of \skiobje{} influences}\label{tab:resskiobje}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 ko01 & written evidence & various & \tquote{we published a paper … I know the Climate Change Committee actually used that paper quite a bit}{p01}{65} \\[5mm]
 ko02 & spoken evidence & various & \tquote{you never know the counter factual do you - if he hadn't turned up to give evidence to the committee, would it never have gone ahead?}{p03}{99} \\[5mm]
 ko03 & prototype or demonstrator & enabling & \tquote{this is really a kind of an industry demonstration project with some science hidden underneath it}{p14}{68} \\[5mm]
@@ -413,14 +437,13 @@ ko03 & prototype or demonstrator & enabling & \tquote{this is really a kind of a
 \end{tabular}
 \end{table}
 
-
 \skiobje{} were the physical or electronic products of the \skiknow. The main \skiobje{} that participants mentioned in relation to \SPI{} engagement were written evidence (\hyperref[tab:resskiobje]{ko01}), spoken evidence (\hyperref[tab:resskiobje]{ko02}) and prototypes or demonstrators (\hyperref[tab:resskiobje]{ko03}). These \skiobje{} were often intrinsic to engagements and were, on the whole, enabling (at worse neutral) to those engagements.
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skiobje{} influences}\label{tab:resskiobjestrat}
+\caption{Strategic practices related to \skiobje{} influences}\label{tab:resskiobjestrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 os01 & broadcast across many mediums & \tquote{I will do lots of talks, webinars, things be on social media, posting about recent reports}{p05}{46}
 \vfill \tquote{I do more than just publishing the scientific paper … write a blog about it for Carbon Brief, or a thread on Twitter}{p09}{94-95} \\[5mm]
 os02 & create audience-specific content & \tquote{In other cases, we've gone to policy makers and said we've got these interesting insights, do you want us to present?}{p05}{52}
@@ -429,20 +452,19 @@ os02 & create audience-specific content & \tquote{In other cases, we've gone to 
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
 \skiobje{} are persistent means of transferring knowledge. Participants described how they tried to make them more accessible and useful by broadcasting their findings across a range of media (\hyperref[tab:resskiobjestrat]{os01}) and making these communications specific to their intended audience (\hyperref[tab:resskiobjestrat]{os02}; which relates to \skifram{} Section~\ref{sec:resskifram}).
 
 \section{\titscip}\label{sec:resskiscip}
 
 \begin{table}[!ht]
 \footnotesize
-\caption{The five factors comprising the \skiscip.}\label{tab:skiscip}
+\caption{The four factors comprising the \skiscip.}\label{tab:skiscip}
 \begin{tabular}{L{.4\linewidth}L{.6\linewidth}} \hline
 \textbf{factor} & \textbf{description} \\ \hline \hline 
-\skipoli & laws, rules and agreements \\[5mm]
-\skiinst & the institutions of the \SPI \\[5mm]
-\skiinfr & how \SPI{} institutions are connected \\[5mm]
-\skieven & aspects of the \SPI{} that change over time \\[5mm]
+\skipoli & laws, rules and agreements \\
+\skiinst & the institutions of the \SPI \\
+\skiinfr & how \SPI{} institutions are connected \\
+\skieven & aspects of the \SPI{} that change over time \\
 \hline
 \end{tabular}
 \end{table}
@@ -459,8 +481,8 @@ This is the system of resources and routines at the \SPI{} that performs governa
 \footnotesize
 \caption{Indicators of \skipoli{} influences}\label{tab:resskipoli}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
-sp01 & \multirow{2}{.8\linewidth}{laws; policy; governance rules; international conventions} & neutral & \tquote{we've done a lot of work on comparing ... emissions with what the the greenhouse gas inventory that each country reports to the United Nations Framework Convention on Climate Change}{p02}{11} \\[5mm]
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
+sp01 & \vfill\multirow{2}{*}{\parbox{.5\linewidth}{\raggedright laws; policies; governance rules; international conventions}} & neutral & \tquote{we've done a lot of work on comparing ... emissions with what the the greenhouse gas inventory that each country reports to the United Nations Framework Convention on Climate Change}{p02}{11} \\[5mm]
 sp02 &  & inhibiting & \tquote{I collide with policy when I work with communities ... at field level ... policies drop from the heavens and land on some poor community ... the impacts of that policy that might be quite contrary to what their needs are}{p11}{17} \\[5mm] 
 \hline
 \end{tabular}
@@ -470,9 +492,9 @@ The \skipoli{} is intrinsic to engaging with policy, and participants mentioned 
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skipoli{} influences}\label{tab:resskipolistrat}
+\caption{Strategic practices related to \skipoli{} influences}\label{tab:resskipolistrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 ps01 & anticipating rules that apply to participants' practice & \tquote{We're recognising the law had not yet changed, but it was developing. Obviously you're a public funded organisation, you want to be operating in the spirit of where the law's going, even ahead of that}{p01}{17} \\[5mm] 
 ps02 & researching impacts of anticipated policy & \tquote{we wanted it to reflect kinds of things that ... government were either thinking of doing}{p03}{27} \\[5mm] 
 ps03 & reflect legal, policy and regulatory commitments in scientific analysis & \tquote{you start from a position where you say, `look, we have listened to everything that you have already said and we're not telling you to do anything that you haven't yourself committed to'}{p09}{41} \\[5mm] 
@@ -480,7 +502,7 @@ ps03 & reflect legal, policy and regulatory commitments in scientific analysis &
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:} Participants described anticipating rules that would apply to their practice (\hyperref[tab:resskipolistrat]{ps01}) as well as proactively researching the impacts of proposed or anticipated policy (\hyperref[tab:resskipolistrat]{ps02}). Participants also described using existing commitments to structure the presentation of their research or evidence (\hyperref[tab:resskipolistrat]{ps03}).
+Participants described anticipating rules that would apply to their practice (\hyperref[tab:resskipolistrat]{ps01}) as well as proactively researching the impacts of proposed or anticipated policy (\hyperref[tab:resskipolistrat]{ps02}). Participants also described using existing commitments to structure the presentation of their research or evidence (\hyperref[tab:resskipolistrat]{ps03}).
 
 \subsection{\titinst}\label{sec:resskiinst}
 
@@ -488,20 +510,19 @@ ps03 & reflect legal, policy and regulatory commitments in scientific analysis &
 \footnotesize
 \caption{Indicators of \skiinst{} influences}\label{tab:resskiinst}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
-si01 & within my institution there is an expectation (to engage with policy; to maintain neutrality; to avoid some topics; to create impact; to write papers; to represent it at events; to write briefings) & various & \tquote{that was very much the culture of that centre was doing work [that] was trying also to impact the world outside academia}{p10}{14} \\[5mm]
-si02 & evaluation of our work (by demonstrating impact; by citations; by identifying where we have been influential; by process not outcome; by outputs; by publications) & various & \tquote{I've picked up on, certainly from the Research Council … I think all of probably UKRI, policy engagement seems to have the same sort of value as industry engagement}{p01}{103} \\[5mm]
-si03 & evaluation of our work (by CAN outcomes; can be ambiguous) & inhibiting & \tquote{having meetings with government departments or sitting on advisory committees, you can't always say `see this piece of advice that has led to this action'}{p05}{23} \\[5mm]
-si04 & scientists doing science for scientists & various & \tquote{you're doing science and you're publishing papers and the people who read those papers are only doing it because they need stuff to cite their study}{p03}{122} \\[5mm]
-si05 & scientists applying the Information Deficit Model to create change & various & \tquote{you'd think: give the policymaker the information and and they'll act}{p05}{95} \\[5mm]
-
-si06 & the evaluation of policy (is very limited; is limited to the obligation to respond; is focused on measurable policy outcomes) & inhibiting & \tquote{they often just don't even evaluate their policies}{p05}{83} \hfill \tquote{the policy makers need measurable things - organisations, to be accountable, need data and statistics}{p11}{33} \\[5mm]
-si07 & the evaluation of policy (was possible by giving feedback) & enabling & \tquote{They took every recommendation we had. That was really impactful, albeit in a very tiny area}{p05}{68} \\[5mm]
-si08 & policy institutions (have distinct ways of working; are changing slowly; are functioning on limited resources) & various & \tquote{I found the ... hierarchy quite interesting - in a meeting, why is someone else saying what I could just say, why do I have to write the notes so that they can say it ... you have to prepare all these briefings and notes for people to say}{p06}{58} \\[5mm]
-si09 & the policy process (has defined timeframes; has defined subject frames; has defined roles) & various & \tquote{you can write the the nicest paper and write the nicest briefing and the nicest translation of that, but people won't listen to you because the decision has been made}{p09}{93} \\[5mm]
-si10 & the policy process (is difficult to understand) & inhibiting & \tquote{I think it's often very difficult to know how advice gets used}{p05}{22} \\[5mm]
-si11 & policy obtaining information from the same sources & various & \tquote{I was like, where's the social science in here, you keep bringing in the physical academies and not the social science}{p06}{60} \\[5mm]
-si12 & policymakers using the same policymaking approach & various & \tquote{…they'll just continue to do the same thing and make the same mistakes or have the same assumptions about what works to change behaviour}{p05}{85} \\[5mm]
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
+si01 & within my institution there is an expectation (to engage with policy; to maintain neutrality; to avoid some topics; to create impact; to write papers; to represent it at events; to write briefings) & various & \tquote{that was very much the culture of that centre was doing work [that] was trying also to impact the world outside academia}{p10}{14} \\
+si02 & evaluation of our work (by demonstrating impact; by citations; by identifying influence; by process not outcome; by outputs; by publications) & various & \tquote{I've picked up on, certainly from the Research Council … I think all of probably UKRI, policy engagement seems to have the same sort of value as industry engagement}{p01}{103} \\
+si03 & evaluation of our work (by CAN outcomes; can be ambiguous) & inhibiting & \tquote{having meetings with government departments or sitting on advisory committees, you can't always say `see this piece of advice that has led to this action'}{p05}{23} \\
+si04 & scientists doing science for scientists & various & \tquote{you're doing science and you're publishing papers and the people who read those papers are only doing it because they need stuff to cite their study}{p03}{122} \\
+si05 & scientists applying the Information Deficit Model to create change & various & \tquote{you'd think: give the policymaker the information and and they'll act}{p05}{95} \\
+si06 & evaluation of policy (is very limited; is limited to the obligation to respond; by measurable outcomes) & inhibiting & \tquote{they often just don't even evaluate their policies}{p05}{83} \hfill \tquote{the policy makers need measurable things - organisations, to be accountable, need data and statistics}{p11}{33} \\
+si07 & evaluation of policy (is possible via feedback) & enabling & \tquote{They took every recommendation we had. That was really impactful, albeit in a very tiny area}{p05}{68} \\
+si08 & policy institutions (have distinct ways of working; are changing slowly; have limited resources) & various & \tquote{I found the ... hierarchy quite interesting - in a meeting, why is someone else saying what I could just say, why do I have to write the notes so that they can say it ...}{p06}{58} \\
+si09 & the policy process (has defined timeframes; has defined subject frames; has defined roles) & various & \tquote{you can write the the nicest paper and write the nicest briefing and the nicest translation of that, but people won't listen to you because the decision has been made}{p09}{93} \\
+si10 & the policy process (is difficult to understand) & inhibiting & \tquote{I think it's often very difficult to know how advice gets used}{p05}{22} \\
+si11 & policy obtaining information from the same sources & various & \tquote{I was like, where's the social science in here, you keep bringing in the physical academies and not the social science}{p06}{60} \\
+si12 & policymakers using the same policymaking approach & various & \tquote{…they'll just continue to do the same thing and make the same mistakes or have the same assumptions about what works to change behaviour}{p05}{85} \\
 \hline
 \end{tabular}
 \end{table}
@@ -512,9 +533,9 @@ Participants noted that they didn't witness much evaluation of policy (\hyperref
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skiinst{} influences}\label{tab:resskiinststrat}
+\caption{Strategic practices related to \skiinst{} influences}\label{tab:resskiinststrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 is01 & engage with policy where possible & \tquote{maybe we’ll ask them to sit on an Advisory Board}{p12}{7} \\[5mm]
 is02 & select policy-related research topics & \tquote{we’d focus on the areas to do with [the biophysical environment], choosing things where we knew that humans might want to interact}{p13}{17} \\[5mm]
 is03 & produce evidence that is relevant and timely & \tquote{be aware of the window of opportunity you have to provide evidence that can contribute to the conversation. At some point certain conversation is concluded}{p09}{92} \\[5mm]
@@ -525,7 +546,6 @@ is06 & open to new ideas & \tquote{[you’re] looking for other ways of tackling
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
 Often, the mentioned influences of \skiinst{} appeared to have strategic origins. For instance, the expectation to engage with policy, maintain neutrality, produce documents, and evaluate engagements could all be expected to support positive outcomes of policy engagement (\hyperref[tab:resskiinststrat]{is01}). In a number of cases, participants mentioned their ability to choose their field of research because they had used this ability to select policy-relevant lines of enquiry (\hyperref[tab:resskiinststrat]{is02}). Several participants advised on providing evidence to policy that met needs in terms of topic and timing (\hyperref[tab:resskiinststrat]{is03}). \tref{In reponse to the difficulty with identifying successful outcomes, one participant described how they focussed on creating a well-informed discussion within the policy process}{p09} (\hyperref[tab:resskiinststrat]{is04}). \tref{Another participant described how they impressed how others would actively demand recognition if their work had been used in a policy setting}{p12} (\hyperref[tab:resskiinststrat]{is05}). Finally, to break out of habits, participants noted their own, and others', efforts to find new ideas and ways of working (\hyperref[tab:resskiinststrat]{is06}).
 
 \subsection{\titinfr}\label{sec:resskiinfr}
@@ -534,7 +554,7 @@ Often, the mentioned influences of \skiinst{} appeared to have strategic origins
 \footnotesize
 \caption{Indicators of \skiinfr{} influences}\label{tab:resskiinfr}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 sif01 & resourcing of science & various & \tquote{we ended up getting some money from another funding stream and actually in the end created a new post}{p04}{13} \\[5mm]
 sif02 & resource of government & various & \tquote{staff head count is now, but if you look at the head counts, they've been decimated and rearranged and rearranged and they're trying to still cover all of the areas and deliver things like the sustainable farming incentive and all of the different challenges they've got}{p14}{106} \\[5mm]
 sif03 & the remit of different levels of policy is difficult to understand & inhibiting & \tquote{It's quite difficult to to actually get some of that international law done in terms of what level do those agreements get made at - is it the level of the state or the individual landowner?}{p01}{19} \\[5mm]
@@ -548,16 +568,15 @@ sif04 & different levels of policymaking have different ways of working & inhibi
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skiinfr{} influences}\label{tab:resskiinfrstrat}
+\caption{Strategic practices related to \skiinfr{} influences}\label{tab:resskiinfrstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 ifs01 & establish joint resourcing & \tquote{I think it often helps if they're putting in some resource, because then they're a bit more invested literally, but also then we can do more together, we can actually collaborate}{p05}{50} \\[5mm]
 ifs02 & engage more locally & \tquote{I think where it becomes a bit clearer is where you have a discrete research project that you are working very closely with and it's often a local authority I would say}{p05}{24} \\[5mm]
 \hline
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
 Realising the importance of resourcing, some participants identified that creating shared resource can help engagement (\hyperref[tab:resskiinfrstrat]{ifs01}; much as collaborating of topics was a strategic practice to build \skinetw, Section~\ref{sec:resskinetw}). Participant also found that aiming their engagements at a more local, or devolved level was more productive (\hyperref[tab:resskiinfrstrat]{ifs02}).
 
 \subsection{\titeven}\label{sec:resskieven}
@@ -566,7 +585,7 @@ Realising the importance of resourcing, some participants identified that creati
 \footnotesize
 \caption{Indicators of \skieven{} influences}\label{tab:resskieven}
 \begin{tabular}{L{.07\linewidth}L{.3\linewidth}L{.11\linewidth}L{.52\linewidth}} \hline
-\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quote} \\ \hline \hline 
+\textbf{id} & \textbf{indicator label} & \textbf{influence} & \textbf{example quotes} \\ \hline \hline 
 se01 & political cycles & various & \tquote{we've now had a change of government it'll be for them to to pick the baton up}{p04}{36} \\[5mm]
 se02 & significant events & various & \tquote{when the referendum was called, it was quite sobering to just to realise just how little understanding there was within the policy process}{p10}{21} \\[5mm]
 se03 & policy staff turnover & inhibiting & \tquote{it's really difficult, you're constantly having to re-establish relationships and to understand the restructure}{p12}{78} \\[5mm]
@@ -575,20 +594,18 @@ se04 & pace of policy development versus rate of knowledge accumulation & inhibi
 \end{tabular}
 \end{table}
 
-
 There were four main areas of \skieven{} that participants noted regarding engagements with policy. The first was to observe changes related to political cycles, in particular changes of governments (\hyperref[tab:resskieven]{se01}; the interviews took place shortly after the 2024 UK general election). Participants also referred to significant events in policymaking such a the \COP s and referenda (\hyperref[tab:resskieven]{se02}). An aspect of engagement that several participant spoke about was the rapid staff turnover, particularly in UK government (\hyperref[tab:resskieven]{se03}), which, as well as the rapid change of ministries, related to political cycles, was a source of frustration for some. Another observation common to a number of participants was that the pace of policy develop could be very slow or then very rapid, and either way it tended not to match with the rate of knowledge accumulation from science (\hyperref[tab:resskieven]{se04}). 
 
 \begin{table}[!ht]
 \footnotesize
-\caption{Strategies related to \skieven{} influences}\label{tab:resskievenstrat}
+\caption{Strategic practices related to \skieven{} influences}\label{tab:resskievenstrat}
 \begin{tabular}{L{.06\linewidth}L{.3\linewidth}L{.64\linewidth}} \hline
-\textbf{id} & \textbf{strategy} & \textbf{example quote} \\ \hline \hline
+\textbf{id} & \textbf{strategic practice} & \textbf{example quotes} \\ \hline \hline
 es01 & being persistent & \tquote{`come up and visit, spend a day with us, we'll show you around', six months later maybe they'll move on ... the next person can do it}{p01}{56} \\[5mm]
 es02 & being reactive & \tquote{you've got to be willing to commit time to this, often dropping everything and responding to something at short notice, or jumping on the train, as you often have to do because everything is centred on London, going backwards and forwards}{p10}{64} \\[5mm]
 \hline
  \end{tabular}
 \end{table}
 
-\paragraph{Strategies:}
 Two similar strategic practices were uses by participants related to \skieven. \tref{One participant addressed the high staff turnover by untiringly welcoming whomever they were able to their work. They considered that the persistence may pay off by educating more people across policymaking}{p01} (\hyperref[tab:resskievenstrat]{es01}). \tref{Another was willing to respond with little delay to request from policymakers, including by doing a great deal of travelling}{p10} (\hyperref[tab:resskievenstrat]{es02}).
 
