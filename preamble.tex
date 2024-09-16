@@ -6,6 +6,18 @@
 % \renewcommand {\@degree@string} {Master of Things}
 % \makeatother
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% this makes floats in float-only pages  go
+% to top of the page rather than the usual
+% vertical middle
+% https://tex.stackexchange.com/questions/28556/how-to-place-a-float-at-the-top-of-a-floats-only-page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \title{The roles, practices and experiences of scientists at the climate and nature science-policy interface}
 % \author{HHYY7}
 \author{Isabel M J Sargent}
