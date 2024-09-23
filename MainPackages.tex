@@ -137,6 +137,8 @@ maxcitenames=2,
 uniquelist=false,
 backend=biber,
 language=british,
+hyperref=true,
+%backref=true,
 %style=phys, sorting=none
 %style=geschichtsfrkl
 %style=numeric-comp,sorting=none
@@ -146,7 +148,10 @@ language=british,
 natbib=true,%url=false,%eprint=false,
 style=\bibtype, sorting=\bibsort, autocite=\bibauto
 ]{biblatex}
-
+\renewcommand*{\citesetup}{%
+  \color{gray}
+  \biburlsetup
+  \frenchspacing}
 % The isorot package allows you to put things sideways 
 %  (or indeed, at any angle) on a page.
 % This can be useful for wide graphs or other figures.
