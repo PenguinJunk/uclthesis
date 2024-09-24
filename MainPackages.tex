@@ -168,6 +168,19 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
   \color{citecolor}
   \biburlsetup
   \frenchspacing}
+
+% this renders et al. in italics:
+\renewbibmacro*{name:andothers}{% Based on name:andothers from biblatex.def
+  \ifboolexpr{
+    test {\ifnumequal{\value{listcount}}{\value{liststop}}}
+    and
+    test \ifmorenames
+  }
+    {\ifnumgreater{\value{liststop}}{1}
+       {\finalandcomma}
+       {}%
+     \andothersdelim\bibstring[\emph]{andothers}}
+    {}}
 % The isorot package allows you to put things sideways 
 %  (or indeed, at any angle) on a page.
 % This can be useful for wide graphs or other figures.
