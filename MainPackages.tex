@@ -113,7 +113,25 @@
 
 % makeidx enables an index to be inserted
 \usepackage{makeidx}
+\usepackage{soul}
 
+%----------------------------------------------------------------------------------------
+%	izzys colours
+%----------------------------------------------------------------------------------------
+\usepackage[pdftex,dvipsnames,table]{xcolor}  % Coloured text etc.
+\definecolor{izpink}{rgb}{1,.9,95}
+\definecolor{izgreen}{rgb}{0,0.5,0}
+\definecolor{citecolor}{rgb}{0.1,0.4,0.1}
+\definecolor{orangelinks}{RGB}{210, 60, 4}
+\definecolor{izorange}{RGB}{204, 51, 0}
+\definecolor{headblue}{rgb}{.7,.81,0.9}
+\newcommand{\pinkcell}{\cellcolor{izpink}}
+\newcommand{\linkcolor}{izgreen}
+
+
+%----------------------------------------------------------------------------------------
+% Izzy's prefered reference package is biblatex
+%----------------------------------------------------------------------------------------
 % The natbib package allows book-type citations commonly used in
 %  longer works, and less commonly in science articles (IME).
 % e.g. (Saucer et al., 1993) rather than [1]
@@ -125,8 +143,6 @@
 %  See: 
 %   http://tex.stackexchange.com/questions/2905/how-can-i-list-references-from-bibtex-file-in-line-with-commentary
 %\usepackage{bibentry} 
-
-% Izzy's prefered reference package is biblatex
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{csquotes}
@@ -149,7 +165,7 @@ natbib=true,%url=false,%eprint=false,
 style=\bibtype, sorting=\bibsort, autocite=\bibauto
 ]{biblatex}
 \renewcommand*{\citesetup}{%
-  \color{gray}
+  \color{citecolor}
   \biburlsetup
   \frenchspacing}
 % The isorot package allows you to put things sideways 
@@ -172,7 +188,6 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
 % generally makes text more readable and hyphenation less likely.
 \usepackage{microtype}
 
-\usepackage{soul}
 \usepackage{ifthen}
 %\usepackage{tocbibind} %don't use this, it forces Contents to be in the toc
 
@@ -185,23 +200,12 @@ style=\bibtype, sorting=\bibsort, autocite=\bibauto
 \makeatother
 % nice example of using todonotes package: https://tex.stackexchange.com/questions/9796/how-to-add-todo-notes
 \usepackage{xargs}                      % Use more than one optional parameter in a new commands
-\usepackage[pdftex,dvipsnames,table]{xcolor}  % Coloured text etc.
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
 \newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}% in: \textbf{\currentname}
 
-%----------------------------------------------------------------------------------------
-%	izzys colours
-%----------------------------------------------------------------------------------------
-\definecolor{izpink}{rgb}{1,.9,95}
-\definecolor{izgreen}{rgb}{0,0.5,0}
-\definecolor{orangelinks}{RGB}{210, 60, 4}
-\definecolor{izorange}{RGB}{204, 51, 0}
-\definecolor{headblue}{rgb}{.7,.81,0.9}
-\newcommand{\pinkcell}{\cellcolor{izpink}}
-\newcommand{\linkcolor}{izgreen}
 
 %----------------------------------------------------------------------------------------
 % Izzy's commands
