@@ -525,13 +525,13 @@
     A thesis submitted in partial fulfillment \\
     of the requirements for the degree of \\
     \textbf{\@degree@string} \\
-    of \\
-    \textbf{University College London}.
+%    of \\
+%    \textbf{University College London}.
     \end{center}%
     \vspace{2em}%
     \begin{center}%
-    \@department \\
-    University College London\\
+    \textbf{\@department} \\
+    \textbf{University College London} \\
     \end{center}%
     \vspace{2em}%
     \begin{center}%
